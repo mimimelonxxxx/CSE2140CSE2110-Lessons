@@ -13,3 +13,7 @@ Version control contributes to *change management* as data is not lost when pers
 When a project is ready for publishing, the version control system can also package the current project and release it. Release schedules vary depending on the project and organization structures. For example, Microsoft does their updates on Tuesday, and Google does their updates on Wednesday. They can either be time based (eg: Microsoft and Google) or feature-based (eg: videos being released for the core game and downloadable content (DLC) being released afterwards). 
 
 There are many version control systems, such as Git, Subversion, Mercurial, and Microsoft Team Foundation Version Control. We are using Git for the computing science program at Lillian Osborne. Git is the most commonly used system, although there are some that are similar. 
+
+#### Git and Git Repositories 
+
+Git is a version control system (VCS) that tracks changes to source code. Git repositories are the online storage platform for projects versioned using Git. One important thing to note is that Git and Git Repos are not on any exams, however you will submit projects through Git. The curriculum doesn't have anything on Git and Git Repositories or VCS because our curriculum was published in 2009. Even so, learning Git and Git Respos are incredibly useful for working and industry standards. 
