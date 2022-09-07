@@ -1,6 +1,6 @@
 # CSE2140 Second Language Programming 1 and CSE2110 Procedural Programming 1
 
-## CSE2130 Notes 
+## CSE2140 Notes 
 
 ### Version Control Systems 
 
@@ -16,4 +16,29 @@ There are many version control systems, such as Git, Subversion, Mercurial, and 
 
 #### Git and Git Repositories 
 
-Git is a version control system (VCS) that tracks changes to source code. Git repositories are the online storage platform for projects versioned using Git. One important thing to note is that Git and Git Repos are not on any exams, however you will submit projects through Git. The curriculum doesn't have anything on Git and Git Repositories or VCS because our curriculum was published in 2009. Even so, learning Git and Git Respos are incredibly useful for working and industry standards. 
+Git is a version control system (VCS) that tracks changes to source code. Git repositories are the online storage platform for projects versioned using Git. One important thing to note is that Git and Git Repos are not on any exams, however you will submit projects through Git. The curriculum doesn't have anything on Git and Git Repositories or VCS because our curriculum was published in 2009. Even so, learning Git and Git Repos are incredibly useful for working and industry standards. 
+
+Cloning a repository takes a copy of the Git repository and places it onto the local computer. The clone also has all versioning and branches of the repository. With a clone on your computer, you do not need an internet connection to work on the code. To create a new version of the source code on Git, the new changes must be **committed** to Git to save a local of the changes. To synchronize the local changes to the online repository, the local committed version must be **pushed** to the online repository. 
+
+* Note that a user can have multiple local commits of a project before pushing all the changes to the Git repository. 
+
+To synchronize changes from the online repository to a local project, the online changes must be **pulled** to the local computer. 
+
+* Note that it is best practice to pull changes to a local repository before adding additional changes. If a pull is not done first there may be conflicts when trying to synchronize changes afterwards. This practice is required for collaborating within a Git repo. 
+
+There are additional features such as collaboration, restoring previous versions, and branching that are covered in CS30.  
+
+## Change Management (IB)
+
+Change management is the process, tools, and techniques to manage the people side of changes to achieve required business outcomes. 
+
+Changing a system can be difficult for a variety of reasons.
+
+* New personnel will need time to become accustomed to the workflow and styles of the project
+* Staff usually need to learn new processes and skills
+* There may be downtime between system changeovers
+  * Transferring data between systems is complex
+* New personnel must adjust to the culture of the new environments (People need to feel welcome so that they can stay for a long time)
+* Transitioning to new systems requires purchasing new (expensive!) equipment and time for users to adjust
+* Staff set in their ways may find adjusting difficult (revolt!)
+* Efficiency of the entire team will decrease as they lack experience with certain software and workloads
