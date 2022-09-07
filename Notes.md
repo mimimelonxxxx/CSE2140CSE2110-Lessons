@@ -36,9 +36,24 @@ Changing a system can be difficult for a variety of reasons.
 
 * New personnel will need time to become accustomed to the workflow and styles of the project
 * Staff usually need to learn new processes and skills
-* There may be downtime between system changeovers
-  * Transferring data between systems is complex
 * New personnel must adjust to the culture of the new environments (People need to feel welcome so that they can stay for a long time)
-* Transitioning to new systems requires purchasing new (expensive!) equipment and time for users to adjust
 * Staff set in their ways may find adjusting difficult (revolt!)
 * Efficiency of the entire team will decrease as they lack experience with certain software and workloads
+* There may be downtime between system changeovers
+  * Transferring data between systems is complex
+  * Data may be lost during the transfer
+* Transitioning to new systems requires purchasing new (expensive!) equipment and time for users to adjust
+* New systems may omit useful features from the old system 
+
+## Computing Science 10 Review 
+
+### Variables 
+
+Variables are a tool to store data and call data at a later part of the program. When naming variables, there are different formats such as camelCase, snake_case, kebab-case, PascalCase (Capitalized), lowercase, UPPERCASE. (For IB, UPPERCASE is used for **all** variable names.) camelCase is used for function and method names, lowercase is used for local variables, UPPERCASE is used for global variables. 
+
+When naming variables
+1. The name of the variables can only have alphanumeric characters, underscores(_), or hyphens(-) 
+2. Variable names must be unique (case sensitive)
+3. It should be descriptive about the data it stores (so you can remember it)
+4. Can't start with a number
+
