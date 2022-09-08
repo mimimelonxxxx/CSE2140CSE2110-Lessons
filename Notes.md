@@ -56,4 +56,31 @@ When naming variables
 2. Variable names must be unique (case sensitive)
 3. It should be descriptive about the data it stores (so you can remember it)
 4. Can't start with a number
+5. Variable names should not (with exceptions) overwrite built in commands 
 
+### Permitted Data Types
+
+Data is stored in various types so that the programs can interact with them based on their data type.
+
+1. *Integers* - stores non-decimal numbers 
+2. *Boolean* - stores a True or False (in some languages, a 1 or 0)
+3. *Float(ing Point Number)* - stores a decimal number (called "a double" in Java and other C-based languages)
+4. *Char* - stores a single ascii character
+5. *String* - stores a string of characters (words)
+
+### Mathematical Operators 
+
+All programming languages include basic arithmetic. Common calculations include addition (+), subtraction (-), multiplication (*), division (/), floor/integer division (//), and modulus (%). 
+
+#### Comparing Numbers 
+
+* ">" = Greater than
+* "<" = Less than
+* ">=" = Greater than or equal to 
+* "<=" = Less than or equal to 
+* "==" = Equals to (a single = assigns a value to a variable)
+* "!=" = Not equals 
+
+### Conditional Statements
+
+Conditional Statements separate parts of the program code that if a specific condition is met, only a portion of the code runs. The condition must result in a True or False (boolean) statement that determines whether the True section or the False section of the conditional statement runs. 
