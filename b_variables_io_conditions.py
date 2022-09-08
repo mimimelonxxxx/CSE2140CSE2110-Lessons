@@ -18,3 +18,12 @@ print(FLOAT)
 print(type(STRING))
 print(type(INTEGER))
 print(type(FLOAT))
+
+## Typecasting ## 
+# The process of converting from one data type to another. 
+
+NUMBER = "14" #string 
+INT_NUMBER = int(NUMBER)
+FLOAT_NUMBER = float(NUMBER)
+STR_NUMBER = str(NUMBER)
+
