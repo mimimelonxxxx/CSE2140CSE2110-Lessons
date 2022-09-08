@@ -20,6 +20,7 @@ print(type(INTEGER))
 print(type(FLOAT))
 
 ## Typecasting ## 
+
 # The process of converting from one data type to another. 
 
 NUMBER = "14" #string 
@@ -27,3 +28,21 @@ INT_NUMBER = int(NUMBER)
 FLOAT_NUMBER = float(NUMBER)
 STR_NUMBER = str(NUMBER)
 
+print(type(INT_NUMBER), type(FLOAT_NUMBER), type(STR_NUMBER))
+
+### INPUTS ###
+
+#Inputs allows user to enter text data into the program. 
+
+USER_IN = input("Enter a number: ")
+# print(int(USER_IN))
+#print(type(USER_IN))
+USER_IN = int(USER_IN)
+## NOTE: All characters from input() are strings. 
+
+### CONDITIONAL STATEMENTS ### 
+
+if USER_IN > 10:
+    print("Woah, that is a high number! ")
+else: 
+    print("I can count those on my fingers! ")
