@@ -44,4 +44,3 @@ while repeatProcess == 1:
 
     elif newCalculation == "N": 
         repeatProcess = 0
-        break
