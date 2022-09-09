@@ -20,8 +20,6 @@ while repeatProcess == 1:
     operation = input("Please enter the operation you would like to use (+, -, *, /): ")
     numberTwo = int(input("Please enter the second number: "))
 
- 
-
 # Processing # 
     if operation == "+": 
         result = numberOne + numberTwo
@@ -41,6 +39,5 @@ while repeatProcess == 1:
 #Processing # 
     if newCalculation == "Y": 
         repeatProcess = 1
-
     elif newCalculation == "N": 
         repeatProcess = 0
