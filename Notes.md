@@ -84,3 +84,44 @@ All programming languages include basic arithmetic. Common calculations include 
 ### Conditional Statements
 
 Conditional Statements separate parts of the program code that if a specific condition is met, only a portion of the code runs. The condition must result in a True or False (boolean) statement that determines whether the True section or the False section of the conditional statement runs. 
+
+*Nested Conditional Statements* have conditional statements within other conditional statements. When the first condition is evaluated, it determines whether a second condition is also evaluated. 
+
+```python
+VALUE = int(input("Number: "))
+
+if VALUE > 0: 
+  #nested condition
+  if VALUE < 10:
+    print(VALUE)
+  ```
+## Contraction
+
+Contractions are a common English technique where two words are combined together to make a single word with both meanings (i.e. do not :arrow_right: don't). In Python, there are two common contractions: decisions and accumulation (counting). 
+
+**NOTE**: IB does not and prefers not to use contractions at all. 
+
+### Decisions
+
+```python
+AVERAGE = float(input("Enter your average: "))
+
+"""
+if AVERAGE > 79.9: 
+  GRADE = "A"
+  else:
+    if AVERAGE > 64.5:
+     GRADE = "B"
+    else:
+      if...
+"""
+
+if AVERAGE > 79.9:
+  GRADE = "A"
+elif AVERAGE > 64.5:
+  GRADE = "B"
+elif AVERAGE > 49.9:
+  GRADE = "C"
+else
+  GRADE = "D"
+```
