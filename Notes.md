@@ -125,3 +125,38 @@ elif AVERAGE > 49.9:
 else
   GRADE = "D"
 ```
+
+### Accumulation
+```python
+NUMBER = 0 
+
+NUMBER = NUMBER + 1
+
+#the above method is the same as,
+
+NUMBER += 1
+
+#Note: In C-based languages, it is NUMBER++
+
+# Other operations
+NUMBER -= 1 
+NUMBER *= 2 
+NUMBER /= 2
+NUMBER //= 2 
+NUMBER %= 2 
+
+# Rarely do you use anything other than += or -=
+```
+
+## Inputs 
+
+In programming languages, users are able to input information into the program manually. To create an input in python, the statement is ```input("Text that will be visible)```. Inputting text will always save the text as a string. If the entry is numeric, the text can then be *typecasted* into an integer or a float to perform calculations. 
+
+NOTE: Inputs are the primary instructions the end user sees, therefore they need to be clear, concise, and provide instructions on what the user should enter. 
+
+## Libraries 
+
+Programming languages divide the commands capable within the programming language into separate files so that only a core set of commands make up the default language. This process allows programs to run with only the set of commands it requires to function, without the bloat of other commands not relevant to the current program. (For example, most programs do not need network management commands.) Programming languages have a **standard library** that is maintained as part of the language. 
+
+There are also third-party libraries that can be installed an imported into the program as well. However, these libraries must be installed separately and rely on the maintenance of non-language programmers. Because these libraries are developed by third-parties, they may break with new updates or the developers may no longer offer updates to the library. Furthermore, including many third-party libraries can increase the complexity of installing and running the program. 
+
