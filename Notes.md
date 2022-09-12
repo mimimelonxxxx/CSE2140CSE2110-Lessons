@@ -160,3 +160,33 @@ Programming languages divide the commands capable within the programming languag
 
 There are also third-party libraries that can be installed an imported into the program as well. However, these libraries must be installed separately and rely on the maintenance of non-language programmers. Because these libraries are developed by third-parties, they may break with new updates or the developers may no longer offer updates to the library. Furthermore, including many third-party libraries can increase the complexity of installing and running the program. 
 
+To add libraries to a program, there are three methods:
+
+```python
+# add an entire library
+import random
+print(random.randrange(2)) #this will output 0 or 1
+
+# add a list of commands from a library
+from random import randrange, randint 
+print(randrange(2)) #waow you skipped a whole step! 
+
+# import every function from a library (not recommended)
+from random import * 
+print(randrange(2))
+# if there is another library with a function of the same name, it will confuse python
+
+# import a library and rename the library
+import random as r 
+print(r.randrange(2))
+# renaming libraries is generally not recommended as it makes clarity difficult
+```
+
+When importing an entire library, it is possible to list multiple libraries in a single import; however it increases the complexity of debugging and reduces readability. 
+
+```python
+import random, math, time
+#very not recommended because this specific line would be changed a lot 
+```
+
+It is important to only import libraries that are neccessary for the program. You can access the Python standard libraries through [this](https://docs.python.org/3/library/) link. 
