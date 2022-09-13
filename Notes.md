@@ -201,11 +201,43 @@ for i in range(3):
   print("hello!")
 # prints hello! three times
 
-#while loop
+# while loop
 NUMBER = 5 
 while NUMBER > 0:
   print("hello!")
   NUMBER -= 1
   print(NUMBER)
 # prints hello! and NUMBER five times 
+```
+To create a loop that does not exit, use ```while True:```
+
+To force an exit from a loop prematurely, use the statement ```break``` (Another alternative is to close the program using ```exit()```)
+
+
+## Subroutines
+
+A subroutine is a smaller algorithm that performs a subsection of the overall program. Subroutines are not executed where they are written, instead the program must call the subroutine name to execute its task. 
+
+There are two types of subroutines: procedural and functional. Procedural subroutines do not have their own inputs or outputs, instead they rely on variables found throughout the program code, called **global variables**. Functions are subroutines that receive data and store that data in a **local variable** that is processed within the function. The results are then returned to the rest of the program. 
+
+For a procedural subroutine to use a variable outside of the subroutine, the variable must be declraed as a global variable within the subroutine. 
+
+```
+// Math Example 
+// Functional example
+f(x) = x + 7 
+a = f(3) // three is inputted into the function
+a = 10 // ten is outputted from the function and stored in a
+// x is the local variable used within the function 
+
+// Procedural example
+a = 4
+b = 5 
+c = 0 
+f() = a + b => c // a plus b is stored in c 
+
+run f()
+
+// There are no inputs into f() and no outputs to save 
+// a, b, and c are all global variables because the function just calls them and uses them without storing
 ```
