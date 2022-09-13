@@ -190,3 +190,22 @@ import random, math, time
 ```
 
 It is important to only import libraries that are neccessary for the program. You can access the Python standard libraries through [this](https://docs.python.org/3/library/) link. 
+
+## For and While Loops
+
+Loops provide repetition to parts of a program without the need to copy and paste sections of code. You want to avoid copy and pasting code, but, if you do data science, a lot of the functions are the same. For loops will repeat until a number of repetitions are met (i.e. repeat 5 times); while loops continue to repeat until a specific condition is met. 
+
+```python
+# for loop
+for i in range(3):
+  print("hello!")
+# prints hello! three times
+
+#while loop
+NUMBER = 5 
+while NUMBER > 0:
+  print("hello!")
+  NUMBER -= 1
+  print(NUMBER)
+# prints hello! and NUMBER five times 
+```
