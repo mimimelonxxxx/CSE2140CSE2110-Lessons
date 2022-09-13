@@ -13,31 +13,34 @@ Use while to repeat process
 """
 
 # Input # 
-repeatProcess = 1 
-result = 0 
-while repeatProcess == 1: 
-    numberOne = int(input("Please enter the first number: "))
-    operation = input("Please enter the operation you would like to use (+, -, *, /): ")
-    numberTwo = int(input("Please enter the second number: "))
+from sre_constants import REPEAT
+
+
+REPEATPROCESS = 1 
+RESULT = 0 
+while REPEATPROCESS == 1: 
+    NUMBERONE = int(input("Please enter the first number: "))
+    OPERATION = input("Please enter the operation you would like to use (+, -, *, /): ")
+    NUMBERTWO = int(input("Please enter the second number: "))
 
 # Processing # 
-    if operation == "+": 
-        result = numberOne + numberTwo
-    elif operation == "*": 
-        result = numberOne * numberTwo
-    elif operation == "/": 
-        result = numberOne / numberTwo
-    elif operation == "-": 
-        result = numberOne - numberTwo
+    if OPERATION == "+": 
+        RESULT = NUMBERONE + NUMBERTWO
+    elif OPERATION == "*": 
+        RESULT = NUMBERONE * NUMBERTWO
+    elif OPERATION == "/": 
+        RESULT = NUMBERONE / NUMBERTWO
+    elif OPERATION == "-": 
+        RESULT = NUMBERONE - NUMBERTWO
 
 # Output # 
-    print("The answer to", numberOne, operation, numberTwo, "is:", result, ". ")
+    print("The answer to", NUMBERONE, OPERATION, NUMBERTWO, "is:", RESULT, ". ")
 
 # Input # 
-    newCalculation = input("Would you like to make another calculation? (Y/N): ")
+    NEWCALCULATION = input("Would you like to make another calculation? (Y/N): ")
 
 #Processing # 
-    if newCalculation == "Y": 
-        repeatProcess = 1
-    elif newCalculation == "N": 
-        repeatProcess = 0
+    if NEWCALCULATION == "Y": 
+        REPEATPROCESS = 1
+    elif NEWCALCULATION == "N": 
+        REPEATPROCESS = 0
