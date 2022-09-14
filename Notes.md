@@ -286,5 +286,23 @@ if NUMBER1 > 5 and NUMBER2 < 10:
 else 
   print("Hello")
 ```
-NOT statements are inverted so that True conditions are False and False statements are True. (Like a contrarian.)
+NOT statements are inverted so that True conditions are False and False statements are True. (Like a contrarian.) Logical operators should NOT change the parameters of the condition. 
 
+Note: OR, AND, and NOT logical operators are simplifications (not contractions!) of nested if statements. 
+
+### VERY IMPORTANT
+
+When multiple operators are used in a single statement, if there are no parentheses (the plural of parenthesis), the AND operators prioritize over the OR operators. Furthermore, the NOT operator only affects the immediate condition. (This is why you use BEDMAS.) 
+
+```python
+NUMBER3 = 45 
+if NUMBER1 > 5 and NUMBER2 < 10 or NUMBER3 < 30:
+  print("Hello")
+# this is true
+
+if NUMBER1 > 5 and not (NUMBER2 < 10 or NUMBER3 < 30):
+  print("Hello")
+# this is false
+```
+
+To specify specific groups of logical operators, use parentheses. 
