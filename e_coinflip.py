@@ -82,14 +82,14 @@ while True:
 
     # Output #
     if COIN1 == 1: 
-        print(heads())
+        heads()
     else: 
         tails()
 
     if COIN2 == 1: 
-        print(heads())
+        heads()
     else: 
-        print(tails())
+        tails()
 
     if CHOICE == RESULT: 
         print("You guessed correctly!")
