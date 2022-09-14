@@ -239,5 +239,52 @@ f() = a + b => c // a plus b is stored in c
 run f()
 
 // There are no inputs into f() and no outputs to save 
+
 // a, b, and c are all global variables because the function just calls them and uses them without storing
 ```
+
+## Logical Operators 
+
+Logical operators are similar to mathematical operators in that they are built-in checks on the conditions. They combine multiple conditions together within a single statement. There are multiple types of logical operators, however the most commonly used ones are AND, OR, and NOT. Using these statements can combine or invert conditions within an if or while statement. All the logical operators can be expressed as an if...else statement. 
+
+```python
+NUMBER1 = 7
+NUMBER 2 = 14 
+
+# OR logical statement 
+if NUMBER1 > 5 or NUMBER2 < 10:
+  print("Hello")
+
+# it can also be expressed like this
+if NUMBER1 > 5: 
+  print("Hello")
+elif NUMBER2 < 10:
+  print("Hello")
+```
+Either the left or right side of the OR statement must be True for the condition to be True. 
+
+```python
+# AND logical operator 
+if NUMBER1 > 5 and NUMBER2 < 10: 
+  print("Hello")
+
+# also expressed like this 
+if NUMBER1 > 5: 
+  if NUMBER2 < 10: 
+    print("Hello")
+```
+AND statements require both sides of the statement to be True for the condition to be True. 
+
+```python
+# NOT operator  
+if not NUMBER1 > 5 and NUMBER2 < 10:
+  print("Hello")
+
+# also this 
+if NUMBER1 > 5 and NUMBER2 < 10: 
+  pass # used for indentation
+else 
+  print("Hello")
+```
+NOT statements are inverted so that True conditions are False and False statements are True. (Like a contrarian.)
+
