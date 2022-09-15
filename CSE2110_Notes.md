@@ -22,9 +22,59 @@ f(x) = 4x + 5
 ```python 
 # python version of the above 
 def myFunction(x): 
-    y = 4*x + 5 
+    y = 4 * x + 5 
     return y
 
 print(myFunction(4))
 # displays 21 
 ```
+
+## Structure of a Function 
+```python 
+def functionName(PARAMETER1, PARAMETER2,...)
+"""
+    docstring - explains what the function does 
+    :param PARAMETER1: data type expected
+    :param PARAMETER2: data type expected 
+    :return: data type expected to return to the main program
+"""
+# CODE to transform data 
+
+return VALUE 
+```
+
+Creating a function uses the same statement as creating a procedural subroutine: ```def```. However, functions also include parameters within the parenthesis following the function name. 
+
+**Arguments** are the external data (number, string, variable, data structure, etc) values that are inputted into the parameter of the function. These arguments come from the rest of the main program code and stored as a **local variable** with the parameter name. Once the function completes its processing with the input values, it can *return a value* or a series of values back to the main program. The main program will then need to store the returned value in a **global variable** if it is needed further along in the program. Return values can also include a statement that occurs on a single line. For example `return int(VALUE)`. 
+
+*A function must have either an input or an output, it **does not**, in fact, require both.*
+
+```python 
+NUMBER1 = 5 # GLOBAL VARIABLE 
+def squareNumber(NUM): 
+    # NUM and SQUARE_NUM are local variables
+    SQUARE_NUM = NUM ** 2 # NUM ^ 2
+    return SQUARE_NUM
+
+NUMBER2 = squareNumber(NUMBER1) # GLOBAL VARIABLE 
+```
+
+### Variables in a Function 
+
+In programming, there are two different categories of variables: global and local. Global variables are accessed throughout the main protion of non-subroutine code (Main program code). Local variables are accessed within a particular subroutine. Local variables do not exist outside teh subroutine they are used in. 
+
+Subroutines cannot use global variables unless they are called into the subroutine. 
+
+```python 
+# using global variables in a function 
+NUMBER1 = 7 
+
+def squareNumber(): 
+    global NUMBER1 # calls global variabel into the function 
+    SQUARE_NUM = NUMBER1 ** 2 
+    return SQUARE_NUM
+    NUMBER2 = SQUARE_NUM 
+```
+
+Note that while calling a global variable is possible, it should be rarely done in a program because it affects modularity of how much we an reuse a function. 
+
