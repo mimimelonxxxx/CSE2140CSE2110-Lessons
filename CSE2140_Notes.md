@@ -1,8 +1,6 @@
-# CSE2140 Second Language Programming 1 and CSE2110 Procedural Programming 1
+# CSE2140 Second Language Programming 1 Notes
 
-## CSE2140 Notes 
-
-### Version Control Systems 
+## Version Control Systems 
 
 Version control systems are a category of software tools that helps **record changes** to files by keeping track of modifications done to the file. 
 
@@ -14,7 +12,7 @@ When a project is ready for publishing, the version control system can also pack
 
 There are many version control systems, such as Git, Subversion, Mercurial, and Microsoft Team Foundation Version Control. We are using Git for the computing science program at Lillian Osborne. Git is the most commonly used system, although there are some that are similar. 
 
-#### Git and Git Repositories 
+### Git and Git Repositories 
 
 Git is a version control system (VCS) that tracks changes to source code. Git repositories are the online storage platform for projects versioned using Git. One important thing to note is that Git and Git Repos are not on any exams, however you will submit projects through Git. The curriculum doesn't have anything on Git and Git Repositories or VCS because our curriculum was published in 2009. Even so, learning Git and Git Repos are incredibly useful for working and industry standards. 
 
@@ -290,7 +288,7 @@ NOT statements are inverted so that True conditions are False and False statemen
 
 Note: OR, AND, and NOT logical operators are simplifications (not contractions!) of nested if statements. 
 
-### VERY IMPORTANT
+#### VERY IMPORTANT
 
 When multiple operators are used in a single statement, if there are no parentheses (the plural of parenthesis), the AND operators prioritize over the OR operators. Furthermore, the NOT operator only affects the immediate condition. (This is why you use BEDMAS.) 
 
@@ -306,3 +304,4 @@ if NUMBER1 > 5 and not (NUMBER2 < 10 or NUMBER3 < 30):
 ```
 
 To specify specific groups of logical operators, use parentheses. 
+
