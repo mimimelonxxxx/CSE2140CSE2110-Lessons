@@ -25,7 +25,7 @@ def heads():
 ||       ';;  ;;;;=        ||
 ||LIBERTY | ''\;;;;;;      ||
  \\     ,| '\  '|><| 1995 //
-  \\   |     |      \  A //
+  \\   |     |      \    //
    `;.,|.    |      '\.-'/
      ~~;;;,._|___.,-;;;~'
          ''=--'
@@ -102,3 +102,17 @@ while True:
         print("You'll get it next time!")
         SCORE -= 5
         print("Your score is:", SCORE)
+    
+    # Continue # 
+
+    # input # 
+    AGAIN = input("Would you like to play again? (Y/n) ") # the default answer is the uppercase option 
+
+    # processing # 
+    if AGAIN == "y" or AGAIN == "Y" or AGAIN == "" or AGAIN == "yes": 
+        continue # or pass 
+    # continue restarts the while loop after this line 
+    else: 
+        # output # 
+        print("Thanks for playing! ")
+        exit() 
