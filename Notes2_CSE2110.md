@@ -78,3 +78,12 @@ def squareNumber():
 
 Note that while calling a global variable is possible, it should be rarely done in a program because it affects modularity of how much we an reuse a function. 
 
+## Advantages of Functional Programming
+
+Functional programming has many advantages over structural (or top-down) programming. 
+
+1. **Repeatability**: once a function is written, it can be used in many different sections of the program without retyping the same lines multiple times. Functions extend into separate program files; whereas procedural subroutines often only work in the file they are written in. 
+
+2. **Modularity**: certain functions can be used and switched out for other functions without breaking the rest of the program. 
+
+3. **Debugging and Testing**: certain functions can be excluded from the main program until it is properly working. 
