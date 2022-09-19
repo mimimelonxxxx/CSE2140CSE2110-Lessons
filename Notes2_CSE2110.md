@@ -89,3 +89,7 @@ Functional programming has many advantages over structural (or top-down) program
 3. **Debugging and Testing**: certain functions can be excluded from the main program until it is properly working. 
 
 4. **Collaboration**: because local variables do not affect the rest of the main program, multiple developers can be creating different functions and do not need to match variable names or data structures. 
+
+A docstring is internal documentation that says what the function does. 
+
+Just remember that functions are taking a human input, not just having a function input. 
