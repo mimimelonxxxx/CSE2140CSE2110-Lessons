@@ -14,7 +14,8 @@ import math
 def getNumber1():
     """
     ask user for first number 
-    :return: float"""
+    :return: float
+    """
     INPUT1 = input("Welcome to your super awesome free calculator! Please input your first number! ")
     INPUT1 = float(INPUT1)
     return INPUT1
@@ -133,5 +134,6 @@ if __name__ == "__main__":
         RESULT = calculateAnswer(NUM1, NUM2, OPERATION)
     else: 
         RESULT = calculateAnswer(NUM1, 0, OPERATION)
+        
     # Outputs # 
     displayAnswer(RESULT)
