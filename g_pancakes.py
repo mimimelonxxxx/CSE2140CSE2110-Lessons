@@ -69,7 +69,7 @@ def makePancakes(FLOUR, MILK, EGGS):
 # Have parameters and no return values 
 def displayPancakes(DOZEN):
     """
-    display number of pancakes to user 
+    display number of pancakes to user, and then display by the dozen
     :param DOZEN: int
     :return: NONE
     """
@@ -77,8 +77,7 @@ def displayPancakes(DOZEN):
         print("You do not have enough ingredients to make yummy pancakes!")
     else: 
         PANCAKES = 12 * DOZEN
-        print(f"You can make {PANCAKES} pancakes! ")
-
+        print(f"You can make {PANCAKES} pancakes! This is {DOZEN} dozen pancakes! ")
 
 ### MAIN PROGRAM CODE ### 
 
