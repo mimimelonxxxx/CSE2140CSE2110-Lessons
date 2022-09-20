@@ -92,17 +92,14 @@ def sqrt(NUM1):
     SQRT = float(SQRT)
     return SQRT
 
-# Outputs # 
-
-### MAIN PROGRAM CODE ### 
-if __name__ == "__main__":
-    # Inputs # 
-    NUM1 = getNumber1()
-    OPERATION = getOperation()
-    if OPERATION != "sqrt":
-        NUM2 = getNumber2()
-
-    # Processing # 
+def calculateAnswer(NUM1, NUM2, OPERATION):
+    """
+    takes the inputted numbers and operation and returns the result
+    :param NUM1: float
+    :param NUM2: float
+    :param OPERATION: string
+    :return: float
+    """
     if OPERATION == "+":
         RESULT = addition(NUM1, NUM2) 
     elif OPERATION == "-":
@@ -113,6 +110,28 @@ if __name__ == "__main__":
         RESULT = division(NUM1, NUM2)
     elif OPERATION == "sqrt":
         RESULT = sqrt(NUM1)
-    
-    # Outputs # 
+    return RESULT
+
+# Outputs # 
+def displayAnswer(RESULT):
+    """
+    displays the result
+    :param RESULT: float
+    :return: string
+    """
     print(f"Your answer is {RESULT}! This has been your super awesome free calculator! ")
+
+### MAIN PROGRAM CODE ### 
+if __name__ == "__main__":
+    # Inputs # 
+    NUM1 = getNumber1()
+    OPERATION = getOperation()
+    if not OPERATION == "sqrt":
+        NUM2 = getNumber2()
+
+    # Processing # 
+        RESULT = calculateAnswer(NUM1, NUM2, OPERATION)
+    else: 
+        RESULT = calculateAnswer(NUM1, 0, OPERATION)
+    # Outputs # 
+    displayAnswer(RESULT)
