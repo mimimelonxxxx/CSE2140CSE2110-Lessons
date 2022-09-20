@@ -10,9 +10,6 @@ date-created: 2022-09-19
 
 # Inputs # 
 # Functional inputs have no parameters but a return value
-from ast import Return
-from inspect import getmembers
-
 
 def getFlour(): 
     """
