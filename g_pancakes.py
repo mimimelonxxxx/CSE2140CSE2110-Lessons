@@ -57,16 +57,27 @@ def makePancakes(FLOUR, MILK, EGGS):
         EGGS_SERVINGS = EGGS // 2
 
         SERVINGS = FLOUR_SERVINGS # Assuming FLOUR_SERVINGS is limiting
-    if MILK_SERVINGS < SERVINGS: 
-        SERVINGS = MILK_SERVINGS
-    if EGGS_SERVINGS < SERVINGS: 
-        SERVINGS = EGGS_SERVINGS
-    SERVINGS = int(SERVINGS)
-    return SERVINGS
-
+        if MILK_SERVINGS < SERVINGS: 
+            SERVINGS = MILK_SERVINGS
+        if EGGS_SERVINGS < SERVINGS: 
+            SERVINGS = EGGS_SERVINGS
+        SERVINGS = int(SERVINGS)
+        return SERVINGS
+    return 0 
 
 # Outputs # 
 # Have parameters and no return values 
+def displayPancakes(DOZEN):
+    """
+    display number of pancakes to user 
+    :param DOZEN: int
+    :return: NONE
+    """
+    if DOZEN == 0: 
+        print("You do not have enough ingredients to make yummy pancakes!")
+    else: 
+        PANCAKES = 12 * DOZEN
+        print(f"You can make {PANCAKES} pancakes! ")
 
 
 ### MAIN PROGRAM CODE ### 
@@ -79,5 +90,6 @@ if __name__ == "__main__":
 
     # Processing # 
     SERVINGS_G = makePancakes(FLOUR_G, MILK_G, EGGS_G)
-    print(SERVINGS_G)
+
     # Outputs # 
+    displayPancakes(SERVINGS_G)
