@@ -90,6 +90,80 @@ Functional programming has many advantages over structural (or top-down) program
 
 4. **Collaboration**: because local variables do not affect the rest of the main program, multiple developers can be creating different functions and do not need to match variable names or data structures. 
 
-A docstring is internal documentation that says what the function does. 
+## Returning Multiple Values from a Function 
 
-Just remember that functions are taking a human input, not just having a function input. 
+A function can have multiple return values. In order to restore multiple return values, separate variables or a more complex data structure must be used. 
+
+```python 
+def myFunction(): 
+    return VALUE1, VALUE2 
+
+VARIABLE1, VARIABLE2 = myFunction() 
+VARIABLE3 = myFunction() # stores as a tuple data structure 
+```
+## Docstrings 
+
+Docstrings are the internal documentation of a function. They are used by functions to describe the data that is being inputted and outputted from a function. (Docstrings improve the readability of the program and is a part of *internal documentation*).
+
+```python 
+def ageCaclulator(CURRENTYEAR, BIRTHYEAR):
+    """
+    Calculates the age the user turns into in a given year
+    :param CURRENTYEAR: int
+    :param BITHYEAR: int
+    :return: int
+    """
+    # docstrings count as pass 
+```
+
+## Recursive Functions (IB)
+
+Recursive functions are functions that return to the same function. This return value will only happen in certain instances and there is **always** a return value that is not the function. These functions loop on themselves because they return back to the function. 
+
+```python
+def checkInt(NUM): 
+    if NUM.isnumeric() == True: 
+        return int(NUM)
+    else: 
+        print("Please enter a valid number!")
+        NEWNUM = input("Number: ")
+        return checkInt(NEWNUM) # recursive statement 
+```
+
+You can theoretically call other functions within the function, but using this technique has many drawbacks, such as reducing readability, introducing complexity, and not following IPO format. 
+
+## Default Parameters 
+
+A function can have default arguments in the event that no arguments are passed into the funciton. Default parameters are often optional and usually placed at the end of the functions parameters in descending order of importance. 
+
+```python
+def myFun(PARAM1=True):
+    return PARAM1 
+print(myFun()) # prints True
+print(myFun(False)) # prints False
+print(myFun(True)) # prints True
+```
+
+Note that the function cannot skip default parameters. If there is a parameter lower in the list of parameters, all default parameters must havea rguments to reach the desired paramter. `def myFun(PARAM1, PARAM2=0, PARAM3=0)` :arrow_right: PARAM3 cannot be called without calling PARAM1 AND PARAM2. 
+
+## Using Multiple Files
+
+Subroutines can be stored in separate files to orgamize functions and improve collaboration. Eg: if you make a program to manage sales at a coffee shop, functions can be organized into payments, transactions and reports. Each of these categories can be in a separate file imported into the main file. In this scenario, edvelopers can then work on separate features of the program without distrupting other developers. 
+
+In order to link mulitple files together, python uses `inport` statement. Files must be in the same folder (or a subfolder) of the main program file. 
+
+The file name of the secondary files must follow variable naming conventions including being alphanumeric but not starting with a number, and only using hypens and underscores as special characters. 
+
+### The \_\_name__ magic variable
+
+When Python runs a file, it associates the "\_\_main__" value to the \_\_name__ magic variable for the file that runs. All other fies imported to the running program uses their file name as the \_\_name__ magic variable. **Magic variables** are predetermined variables in the backend of the programming language that helps the program run. Oftentimes programmers do not need to modify these values in the program. Magic variables are indicated by two underscores before and after the text. They are sometimes called "double underscore variables" or "dunder variables." (NEVER use the name dunder variables.) Since python automatically updates the \_\_name__ magic variable, a check can be included to ensure that code runs only if the given file is run, and not an imported file. This cheeck allows subroutines and functions to be tested in their respective files withiout being inpored into the main program. 
+
+```python
+def someFunction(PARAM1):
+    VALUE = {some code}
+    return VALUE
+
+if __name__ == "__main__":
+    # This section will only run if the file is run, not imported
+    print(someFunction(VAR1))
+```
