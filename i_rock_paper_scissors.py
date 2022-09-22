@@ -7,7 +7,6 @@ date-created: 2022-09-22
 """
 
 from random import randint
-from sys import exit
 import sys
 
 ### SUBROUTINES ###
