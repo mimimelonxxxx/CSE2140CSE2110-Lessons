@@ -12,7 +12,8 @@ import sys
 ### SUBROUTINES ###
 # Inputs # 
 def checkInt(VALUE): 
-    """Validate whether a string is an integer 
+    """
+    Validate whether a string is an integer 
     :param VALUE: string 
     :return: int 
     """
@@ -85,7 +86,8 @@ def displayWinner(WINNER):
     """
     display the winner of the round 
     :param WINNER: int 
-    :return: None"""
+    :return: None
+    """
     if WINNER == 0: 
         print("It's a tie! ")
     elif WINNER == 1: 
